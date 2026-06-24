@@ -33,7 +33,7 @@
                         <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
                     </svg>
                 </a>
-                <a href="#">Facebook-р нэвтрэх</a>
+                <a href="#" id="authToggle">Нэвтрэх</a>
             </div>
         </div>
     </div>
@@ -1482,6 +1482,59 @@
                         <button class="btn btn-primary" id="modalAddCart">САГСАНД НЭМЭХ</button>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Auth modal -->
+    <div class="modal-overlay auth-modal-overlay" id="authModal">
+        <div class="modal auth-modal">
+            <button class="modal-close" id="authModalClose" aria-label="Хаах">×</button>
+            <div class="auth-modal-content">
+                <div class="auth-tabs">
+                    <button class="auth-tab active" data-tab="login">Нэвтрэх</button>
+                    <button class="auth-tab" data-tab="register">Бүртгүүлэх</button>
+                </div>
+
+                <form class="auth-form active" id="loginForm" data-form="login">
+                    <h3>Бүртгэл рүү нэвтрэх</h3>
+                    <div class="form-group">
+                        <label for="loginEmail">И-мэйл</label>
+                        <input type="email" id="loginEmail" placeholder="example@email.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="loginPassword">Нууц үг</label>
+                        <input type="password" id="loginPassword" placeholder="Нууц үг" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">Нэвтрэх</button>
+                    <p class="auth-helper">Бүртгэлгүй юу? <a href="#" class="switch-tab" data-tab="register">Бүртгүүлэх</a></p>
+                </form>
+
+                <form class="auth-form" id="registerForm" data-form="register">
+                    <h3>Шинээр бүртгүүлэх</h3>
+                    <div class="form-group">
+                        <label for="registerName">Нэр</label>
+                        <input type="text" id="registerName" placeholder="Таны нэр" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="registerEmail">И-мэйл</label>
+                        <input type="email" id="registerEmail" placeholder="example@email.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="registerPhone">Утасны дугаар</label>
+                        <input type="tel" id="registerPhone" placeholder="9911-2233" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="registerPassword">Нууц үг</label>
+                        <input type="password" id="registerPassword" placeholder="6-аас дээш тэмдэгт" minlength="6" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="registerConfirm">Нууц үг давтах</label>
+                        <input type="password" id="registerConfirm" placeholder="Нууц үгээ давтана уу" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">Бүртгүүлэх</button>
+                    <p class="auth-helper">Бүртгэлтэй юу? <a href="#" class="switch-tab" data-tab="login">Нэвтрэх</a></p>
+                </form>
             </div>
         </div>
     </div>

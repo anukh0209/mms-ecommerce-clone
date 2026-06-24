@@ -250,8 +250,130 @@ document.addEventListener('DOMContentLoaded', () => {
         return [...(brandSpecs[brand] || []), ...common];
     }
 
-    // Topbar links / cart / login placeholder
-    document.querySelectorAll('.topbar a, .login-link').forEach(link => {
+    // Auth modal
+    const authModal = document.getElementById('authModal');
+    const authToggle = document.getElementById('authToggle');
+    const authModalClose = document.getElementById('authModalClose');
+    const authTabs = document.querySelectorAll('.auth-tab');
+    const authForms = document.querySelectorAll('.auth-form');
+    const loginForm = document.getElementById('loginForm');
+    const registerForm = document.getElementById('registerForm');
+
+    function openAuthModal(tab = 'login') {
+        switchAuthTab(tab);
+        authModal.classList.add('open');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeAuthModal() {
+        authModal.classList.remove('open');
+        document.body.style.overflow = '';
+        loginForm.reset();
+        registerForm.reset();
+    }
+
+    function switchAuthTab(tab) {
+        authTabs.forEach(t => t.classList.toggle('active', t.dataset.tab === tab));
+        authForms.forEach(f => f.classList.toggle('active', f.dataset.form === tab));
+    }
+
+    authToggle.addEventListener('click', (e) => {
+        e.preventDefault();
+        const currentUser = JSON.parse(localStorage.getItem('mmsUser') || 'null');
+        if (currentUser) {
+            if (confirm(`${currentUser.name} та гарчих уу?`)) {
+                localStorage.removeItem('mmsUser');
+                updateAuthUI();
+                showToast('Системээс гарлаа');
+            }
+        } else {
+            openAuthModal('login');
+        }
+    });
+
+    authModalClose.addEventListener('click', closeAuthModal);
+    authModal.addEventListener('click', (e) => {
+        if (e.target === authModal) closeAuthModal();
+    });
+
+    authTabs.forEach(tab => {
+        tab.addEventListener('click', () => switchAuthTab(tab.dataset.tab));
+    });
+
+    document.querySelectorAll('.switch-tab').forEach(link => {
+        link.addEventListener('click', (e) => {
+            e.preventDefault();
+            switchAuthTab(link.dataset.tab);
+        });
+    });
+
+    function getUsers() {
+        return JSON.parse(localStorage.getItem('mmsUsers') || '[]');
+    }
+
+    function saveUsers(users) {
+        localStorage.setItem('mmsUsers', JSON.stringify(users));
+    }
+
+    function updateAuthUI() {
+        const user = JSON.parse(localStorage.getItem('mmsUser') || 'null');
+        if (user) {
+            authToggle.textContent = user.name;
+            authToggle.classList.add('user-name');
+        } else {
+            authToggle.textContent = 'Нэвтрэх';
+            authToggle.classList.remove('user-name');
+        }
+    }
+
+    loginForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const email = document.getElementById('loginEmail').value.trim();
+        const password = document.getElementById('loginPassword').value;
+        const users = getUsers();
+        const user = users.find(u => u.email === email && u.password === password);
+        if (user) {
+            localStorage.setItem('mmsUser', JSON.stringify(user));
+            updateAuthUI();
+            closeAuthModal();
+            showToast(`Тавтай морил, ${user.name}`);
+        } else {
+            showToast('И-мэйл эсвэл нууц үг буруу байна');
+        }
+    });
+
+    registerForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const name = document.getElementById('registerName').value.trim();
+        const email = document.getElementById('registerEmail').value.trim();
+        const phone = document.getElementById('registerPhone').value.trim();
+        const password = document.getElementById('registerPassword').value;
+        const confirm = document.getElementById('registerConfirm').value;
+
+        if (password !== confirm) {
+            showToast('Нууц үг таарахгүй байна');
+            return;
+        }
+
+        const users = getUsers();
+        if (users.some(u => u.email === email)) {
+            showToast('Энэ и-мэйлээр бүртгэл байна');
+            return;
+        }
+
+        const newUser = { name, email, phone, password };
+        users.push(newUser);
+        saveUsers(users);
+        localStorage.setItem('mmsUser', JSON.stringify(newUser));
+        updateAuthUI();
+        closeAuthModal();
+        showToast('Амжилттай бүртгэгдлээ');
+    });
+
+    updateAuthUI();
+
+    // Topbar links / cart placeholder
+    document.querySelectorAll('.topbar a:not(#authToggle)').forEach(link => {
         link.addEventListener('click', (e) => {
             const href = link.getAttribute('href');
             if (href === '#' || !href) {

@@ -1,0 +1,1493 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MMS - The Future Is Electric</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Top contact bar -->
+    <div class="topbar">
+        <div class="container topbar-inner">
+            <div class="topbar-left">
+                <span class="topbar-item">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                    7711-1999
+                </span>
+                <span class="topbar-item">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+                    sales@source.mn
+                </span>
+            </div>
+            <div class="topbar-right">
+                <a href="#">About</a>
+                <a href="#">Career</a>
+                <a href="#" class="topbar-cart" aria-label="Сагс">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="9" cy="21" r="1"></circle>
+                        <circle cx="20" cy="21" r="1"></circle>
+                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                    </svg>
+                </a>
+                <a href="#">Facebook-р нэвтрэх</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main header -->
+    <header class="main-header">
+        <div class="container header-inner">
+            <a href="/" class="logo-group">
+                <div class="logo-circle">MMS</div>
+                <div class="logo-text">
+                    <span class="logo-line1">THE</span>
+                    <span class="logo-line2">FUTURE IS</span>
+                    <span class="logo-line3">ELECTRIC</span>
+                </div>
+            </a>
+
+            <div class="header-center">
+                <div class="category-dropdown" id="categoryDropdown">
+                    <button class="dropdown-toggle" id="dropdownToggle">
+                        <svg class="icon grid-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="3" width="7" height="7"></rect>
+                            <rect x="14" y="3" width="7" height="7"></rect>
+                            <rect x="14" y="14" width="7" height="7"></rect>
+                            <rect x="3" y="14" width="7" height="7"></rect>
+                        </svg>
+                        Ангилалууд
+                        <svg class="icon chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="dropdown-menu" id="dropdownMenu">
+                        <a href="#products" data-category="senergy">Switchboard</a>
+                        <a href="#products" data-category="jinko">Solar system</a>
+                        <a href="#products" data-category="ujin">Cable</a>
+                        <a href="#products" data-category="milwaukee">Battery tools</a>
+                        <a href="#products" data-category="ujin">LV & MV power transmission</a>
+                        <a href="#products" data-category="midea">Lighting design</a>
+                        <a href="#products" data-category="schneider">Power connection</a>
+                        <a href="#products" data-category="chint">Automation control</a>
+                        <a href="#products" class="sale-link" data-category="sale">
+                            Хямдралтыг бүтээгдэхүүн
+                            <span class="sale-tag">SALE</span>
+                        </a>
+                    </div>
+                </div>
+
+                <form class="search-form" id="searchForm">
+                    <input type="text" id="searchInput" placeholder="Хайх зүйлсийн нэрээ бичнэ үү ...">
+                    <button type="submit" class="search-btn" aria-label="Хайх">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path></svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero banner placeholder -->
+    <section class="hero-banner">
+        <div class="container">
+            <div class="hero-placeholder">
+                <span>ЗУРАГ</span>
+            </div>
+        </div>
+        <a href="#brands" class="scroll-down" aria-label="Доош">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="7 13 12 18 17 13"></polyline></svg>
+        </a>
+    </section>
+
+    <!-- Construction products / brands -->
+    <section id="brands" class="brands section">
+        <div class="container">
+            <h2 class="section-title">БАРИЛГЫН БҮТЭЭГДЭХҮҮН</h2>
+            <div class="brands-grid">
+                <a href="#products" class="brand-card" data-brand="milwaukee">
+                    <div class="brand-visual">
+                        <div class="brand-img">
+                            <img src="images/milwaukee.png" alt="Milwaukee tools" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="brand-info">
+                        <span class="brand-name">MILWAUKEE</span>
+                        <span class="brand-cat">БАГАЖ</span>
+                    </div>
+                </a>
+
+                <a href="#products" class="brand-card" data-brand="senergy">
+                    <div class="brand-visual">
+                        <div class="brand-img">
+                            <img src="images/senergy.jpg" alt="Senergy switchboard" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="brand-info">
+                        <span class="brand-name">SENERGY</span>
+                        <span class="brand-cat">САМБАР</span>
+                    </div>
+                </a>
+
+                <a href="#products" class="brand-card" data-brand="ujin">
+                    <div class="brand-visual">
+                        <div class="brand-img">
+                            <img src="images/ujin.jpg" alt="U-JIN cable" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="brand-info">
+                        <span class="brand-name">U-JIN</span>
+                        <span class="brand-cat">КАБЕЛЬ</span>
+                    </div>
+                </a>
+
+                <a href="#products" class="brand-card" data-brand="schneider">
+                    <div class="brand-visual">
+                        <div class="brand-img">
+                            <img src="images/schneider.jpg" alt="Schneider Electric socket" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="brand-info">
+                        <span class="brand-name">Schneider Electric</span>
+                        <span class="brand-cat">УНТРААЛГА, РОЗЕТКА</span>
+                    </div>
+                </a>
+
+                <a href="#products" class="brand-card" data-brand="jinko">
+                    <div class="brand-visual">
+                        <div class="brand-img">
+                            <img src="images/jinko.jpg" alt="Jinko Solar panel" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="brand-info">
+                        <span class="brand-name">Jinko Solar</span>
+                        <span class="brand-cat">НАРНЫ ХАВТАН</span>
+                    </div>
+                </a>
+
+                <a href="#products" class="brand-card" data-brand="eaton">
+                    <div class="brand-visual">
+                        <div class="brand-img">
+                            <img src="images/eaton.jpg" alt="Eaton B-Line cable tray" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="brand-info">
+                        <span class="brand-name">Eaton B-Line</span>
+                        <span class="brand-cat">КАБЕЛЬ ТАВИУР</span>
+                    </div>
+                </a>
+
+                <a href="#products" class="brand-card" data-brand="midea">
+                    <div class="brand-visual">
+                        <div class="brand-img">
+                            <img src="images/midea.jpg" alt="Midea lighting" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="brand-info">
+                        <span class="brand-name">Midea</span>
+                        <span class="brand-cat">ГЭРЭЛ</span>
+                    </div>
+                </a>
+
+                <a href="#products" class="brand-card" data-brand="schneider-breaker">
+                    <div class="brand-visual">
+                        <div class="brand-img">
+                            <img src="images/schneider-breaker.jpg" alt="Schneider Electric breaker" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="brand-info">
+                        <span class="brand-name">Schneider Electric</span>
+                        <span class="brand-cat">АВТОМАТ</span>
+                    </div>
+                </a>
+
+                <a href="#products" class="brand-card" data-brand="chint">
+                    <div class="brand-visual">
+                        <div class="brand-img">
+                            <img src="images/chint.png" alt="CHINT breaker" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="brand-info">
+                        <span class="brand-name">CHINT</span>
+                        <span class="brand-cat">АВТОМАТ</span>
+                    </div>
+                </a>
+
+                <a href="#products" class="brand-card" data-brand="burndy">
+                    <div class="brand-visual">
+                        <div class="brand-img">
+                            <img src="images/burndy.jpg" alt="Burndy grounding" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="brand-info">
+                        <span class="brand-name">BURNDY</span>
+                        <span class="brand-cat">ГАЗАРДУУЛГА</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brand products -->
+    <section id="products" class="products-section section section-alt">
+        <div class="container">
+            <div class="products-header">
+                <h2 class="section-title" id="productsTitle">БҮХ БҮТЭЭГДЭХҮҮН</h2>
+                <button class="btn btn-secondary" id="showAllBtn" style="display:none">БҮГДИЙГ ХАРАХ</button>
+            </div>
+            <div class="products-grid" id="productsGrid">
+                <!-- MILWAUKEE -->
+                <article class="product-card" data-brand="milwaukee" data-name="M18 FUEL Hex Impact Driver" data-price="980000">
+                    <div class="badge badge-new">ШИНЭ</div>
+                    <div class="product-img" style="background:linear-gradient(135deg,#ef4444,#b91c1c)"></div>
+                    <div class="product-body">
+                        <h3>M18 FUEL 1/4" Hex Impact Driver</h3>
+                        <p class="sku">M18-FID2-502X / 5.0Ah батерей 2шт</p>
+                        <p class="product-desc">226Нм эргүүлэх хүчтэй, бүрхүүлгүй мотортой импакт драйвер. 4-р үеийн POWERSTATE мотор.</p>
+                        <div class="price-row">
+                            <span class="price">980,000₮</span>
+                            <span class="old-price">1,150,000₮</span>
+                        </div>
+                        <p class="stock">Бэлэн (42)</p>
+                        <div class="product-actions">
+                            <button class="add-cart-btn">САГСАНД НЭМЭХ</button>
+                            <button class="detail-btn">Дэлгэрэнгүй</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-brand="milwaukee" data-name="M18 FUEL Hammer Drill" data-price="1250000">
+                    <div class="badge">-12%</div>
+                    <div class="product-img" style="background:linear-gradient(135deg,#dc2626,#991b1b)"></div>
+                    <div class="product-body">
+                        <h3>M18 FUEL Hammer Drill/Driver</h3>
+                        <p class="sku">M18-PD2-502X / 135Нм</p>
+                        <p class="product-desc">135Нм хүчтэй, 2 хурдны бүрхүүлгүй мотортой цохилтот дрийл. REDLINK PLUS ухаалаг электроник.</p>
+                        <div class="price-row">
+                            <span class="price">1,250,000₮</span>
+                            <span class="old-price">1,420,000₮</span>
+                        </div>
+                        <p class="stock">Бэлэн (38)</p>
+                        <div class="product-actions">
+                            <button class="add-cart-btn">САГСАНД НЭМЭХ</button>
+                            <button class="detail-btn">Дэлгэрэнгүй</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-brand="milwaukee" data-name="M18 FUEL Rotary Hammer" data-price="2450000">
+                    <div class="badge">-14%</div>
+                    <div class="product-img" style="background:linear-gradient(135deg,#b91c1c,#7f1d1d)"></div>
+                    <div class="product-body">
+                        <h3>M18 FUEL SDS-Plus Rotary Hammer</h3>
+                        <p class="sku">M18-CHX-0 / 2.5Дж</p>
+                        <p class="product-desc">SDS-Plus хувилбар, 2.5Ж цохилтын энерги. Бетон, чулуу, тоосго өрөмдөхөд.</p>
+                        <div class="price-row">
+                            <span class="price">2,450,000₮</span>
+                            <span class="old-price">2,850,000₮</span>
+                        </div>
+                        <p class="stock">Бэлэн (20)</p>
+                        <div class="product-actions">
+                            <button class="add-cart-btn">САГСАНД НЭМЭХ</button>
+                            <button class="detail-btn">Дэлгэрэнгүй</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-brand="milwaukee" data-name="M18 FUEL Angle Grinder" data-price="1350000">
+                    <div class="badge">-10%</div>
+                    <div class="product-img" style="background:linear-gradient(135deg,#f97316,#c2410c)"></div>
+                    <div class="product-body">
+                        <h3>M18 FUEL 125mm Angle Grinder</h3>
+                        <p class="sku">M18-FSAG125X-0 / 8500 эрг/мин</p>
+                        <p class="product-desc">125мм дискний зүлгүүр. Paddle хяналттай. Төмөр, ган зүлгэх, хайчлахад.</p>
+                        <div class="price-row">
+                            <span class="price">1,350,000₮</span>
+                            <span class="old-price">1,500,000₮</span>
+                        </div>
+                        <p class="stock">Бэлэн (35)</p>
+                        <div class="product-actions">
+                            <button class="add-cart-btn">САГСАНД НЭМЭХ</button>
+                            <button class="detail-btn">Дэлгэрэнгүй</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-brand="milwaukee" data-name="M12 FUEL Installation Drill" data-price="1680000">
+                    <div class="badge">-8%</div>
+                    <div class="product-img" style="background:linear-gradient(135deg,#fb923c,#9a3412)"></div>
+                    <div class="product-body">
+                        <h3>M12 FUEL Installation Drill/Driver</h3>
+                        <p class="sku">M12-FDDXKIT-202X / 4 толгой</p>
+                        <p class="product-desc">Электрикч, механикчид зориулсан олон толгойтой багаж. Өрөм, дрийл, импакт, 90-градус.</p>
+                        <div class="price-row">
+                            <span class="price">1,680,000₮</span>
+                            <span class="old-price">1,820,000₮</span>
+                        </div>
+                        <p class="stock">Бэлэн (18)</p>
+                        <div class="product-actions">
+                            <button class="add-cart-btn">САГСАНД НЭМЭХ</button>
+                            <button class="detail-btn">Дэлгэрэнгүй</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-brand="milwaukee" data-name="M18 FUEL Circular Saw" data-price="2100000">
+                    <div class="badge badge-new">ШИНЭ</div>
+                    <div class="product-img" style="background:linear-gradient(135deg,#ea580c,#7c2d12)"></div>
+                    <div class="product-body">
+                        <h3>M18 FUEL 190mm Circular Saw</h3>
+                        <p class="sku">M18-CCS55-0 / 55мм хагалах чадал</p>
+                        <p class="product-desc">190мм хүрээ хөрөө. 5800 эрг/мин. Хүнд мод, хавтан хайчлахад.</p>
+                        <div class="price-row">
+                            <span class="price">2,100,000₮</span>
+                            <span class="old-price">2,450,000₮</span>
+                        </div>
+                        <p class="stock">Бэлэн (15)</p>
+                        <div class="product-actions">
+                            <button class="add-cart-btn">САГСАНД НЭМЭХ</button>
+                            <button class="detail-btn">Дэлгэрэнгүй</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- SENERGY -->
+                <article class="product-card" data-brand="senergy" data-name="Distribution Board 12-way" data-price="185000">
+                    <div class="badge">-10%</div>
+                    <div class="product-img" style="background:linear-gradient(135deg,#64748b,#475569)"></div>
+                    <div class="product-body">
+                        <h3>Senergy Distribution Board 12-way</h3>
+                        <p class="sku">SE-DB-12 / IP40</p>
+                        <p class="product-desc">Орон сууц, оффисын 12 байрлалтай металл самбар. Busbar, N/PE холболт бүрэн.</p>
+                        <div class="price-row">
+                            <span class="price">185,000₮</span>
+                            <span class="old-price">205,000₮</span>
+                        </div>
+                        <p class="stock">Бэлэн (60)</p>
+                        <div class="product-actions">
+                            <button class="add-cart-btn">САГСАНД НЭМЭХ</button>
+                            <button class="detail-btn">Дэлгэрэнгүй</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-brand="senergy" data-name="Distribution Board 18-way" data-price="245000">
+                    <div class="badge badge-new">ШИНЭ</div>
+                    <div class="product-img" style="background:linear-gradient(135deg,#94a3b8,#475569)"></div>
+                    <div class="product-body">
+                        <h3>Senergy Distribution Board 18-way</h3>
+                        <p class="sku">SE-DB-18 / IP40</p>
+                        <p class="product-desc">Арилжааны барилгын 18 байрлалтай самбар. DIN rail бүрэн угсарсан, хаалгатай.</p>
+                        <div class="price-row">
+                            <span class="price">245,000₮</span>
+                            <span class="old-price">285,000₮</span>
+                        </div>
+                        <p class="stock">Бэлэн (45)</p>
+                        <div class="product-actions">
+                            <button class="add-cart-btn">САГСАНД НЭМЭХ</button>
+                            <button class="detail-btn">Дэлгэрэнгүй</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-brand="senergy" data-name="Main Switchboard IP65" data-price="1850000">
+                    <div class="badge">-8%</div>
+                    <div class="product-img" style="background:linear-gradient(135deg,#475569,#1e293b)"></div>
+                    <div class="product-body">
+                        <h3>Senergy Main Switchboard IP65</h3>
+                        <p class="sku">SE-MS-IP65-24 / Гадна суурьлуулалт</p>
+                        <p class="product-desc">Ус нэвтрүүлдэггүй 24 модуль багтаамжтай гадна цахилгаан самбар.</p>
+                        <div class="price-row">
+                            <span class="price">1,850,000₮</span>
+                            <span class="old-price">2,010,000₮</span>
+                        </div>
+                        <p class="stock">Бэлэн (22)</p>
+                        <div class="product-actions">
+                            <button class="add-cart-btn">САГСАНД НЭМЭХ</button>
+                            <button class="detail-btn">Дэлгэрэнгүй</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-brand="senergy" data-name="Metering Panel" data-price="950000">
+                    <div class="badge">-12%</div>
+                    <div class="product-img" style="background:linear-gradient(135deg,#334155,#0f172a)"></div>
+                    <div class="product-body">
+                        <h3>Senergy Metering Panel 3-phase</h3>
+                        <p class="sku">SE-MP-3P / Тоолуурын самбар</p>
+                        <p class="product-desc">3 фазын тоолуурын самбар. Түрээсийн байр, оффис, дэлгүүрт зориулсан.</p>
+                        <div class="price-row">
+                            <span class="price">950,000₮</span>
+                            <span class="old-price">1,080,000₮</span>
+                        </div>
+                        <p class="stock">Бэлэн (30)</p>
+                        <div class="product-actions">
+                            <button class="add-cart-btn">САГСАНД НЭМЭХ</button>
+                            <button class="detail-btn">Дэлгэрэнгүй</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-brand="senergy" data-name="ATS Panel 100A" data-price="3200000">
+                    <div class="badge badge-new">ШИНЭ</div>
+                    <div class="product-img" style="background:linear-gradient(135deg,#1e293b,#020617)"></div>
+                    <div class="product-body">
+                        <h3>Senergy ATS Panel 100A</h3>
+                        <p class="sku">SE-ATS-100 / 3P+N</p>
+                        <p class="product-desc">100A автомат шилжүүлэгч самбар. Генератор, сүлжээ хооронд автоматаар шилжинэ.</p>
+                        <div class="price-row">
+                            <span class="price">3,200,000₮</span>
+                            <span class="old-price">3,650,000₮</span>
+                        </div>
+                        <p class="stock">Бэлэн (12)</p>
+                        <div class="product-actions">
+                            <button class="add-cart-btn">САГСАНД НЭМЭХ</button>
+                            <button class="detail-btn">Дэлгэрэнгүй</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-brand="senergy" data-name="Sub-distribution Board" data-price="420000">
+                    <div class="badge">-15%</div>
+                    <div class="product-img" style="background:linear-gradient(135deg,#52525b,#27272a)"></div>
+                    <div class="product-body">
+                        <h3>Senergy Sub-distribution Board 8-way</h3>
+                        <p class="sku">SE-SDB-8 / Дотоод</p>
+                        <p class="product-desc">8 модуль багтаамжтай дотоод хуваалтын самбар. Барилгын давхар бүрт тохиромжтой.</p>
+                        <div class="price-row">
+                            <span class="price">420,000₮</span>
+                            <span class="old-price">495,000₮</span>
+                        </div>
+                        <p class="stock">Бэлэн (38)</p>
+                        <div class="product-actions">
+                            <button class="add-cart-btn">САГСАНД НЭМЭХ</button>
+                            <button class="detail-btn">Дэлгэрэнгүй</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- U-JIN -->
+                <article class="product-card" data-brand="ujin" data-name="VVGng 3x1.5" data-price="980000">
+                    <div class="badge">-10%</div>
+                    <div class="product-img" style="background:linear-gradient(135deg,#f59e0b,#d97706)"></div>
+                    <div class="product-body">
+                        <h3>U-JIN VVGng 3x1.5 кабель</h3>
+                        <p class="sku">VVGng-LS 3x1.5 / 100м бухта</p>
+                        <p class="product-desc">Зэс дамжуулагчтай, хөндийлөхгүй, галд тэсвэртэй кабель. Гэрэлтүүлэг, розеткийн шугам.</p>
+                        <div class="price-row">
+                            <span class="price">980,000₮</span>
+                            <span class="old-price">1,090,000₮</span>
+                        </div>
+                        <p class="stock">Бэлэн (80 бухта)</p>
+                        <div class="product-actions">
+                            <button class="add-cart-btn">САГСАНД НЭМЭХ</button>
+                            <button class="detail-btn">Дэлгэрэнгүй</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-brand="ujin" data-name="VVGng 3x2.5" data-price="1450000">
+                    <div class="badge">-12%</div>
+                    <div class="product-img" style="background:linear-gradient(135deg,#fbbf24,#b45309)"></div>
+                    <div class="product-body">
+                        <h3>U-JIN VVGng 3x2.5 кабель</h3>
+                        <p class="sku">VVGng-LS 3x2.5 / 100м бухта</p>
+                        <p class="product-desc">Хүнд даацын тоног төхөөрөмж, халаагуур холбох зориулалттай. -15°C хүртэл ажиллана.</p>
+                        <div class="price-row">
+                            <span class="price">1,450,000₮</span>
+                            <span class="old-price">1,650,000₮</span>
+                        </div>
+                        <p class="stock">Бэлэн (65 бухта)</p>
+                        <div class="product-actions">
+                            <button class="add-cart-btn">САГСАНД НЭМЭХ</button>
+                            <button class="detail-btn">Дэлгэрэнгүй</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-brand="ujin" data-name="VVGng 5x6" data-price="4850000">
+                    <div class="badge badge-new">ШИНЭ</div>
+                    <div class="product-img" style="background:linear-gradient(135deg,#f97316,#9a3412)"></div>
+                    <div class="product-body">
+                        <h3>U-JIN VVGng 5x6 кабель</h3>
+                        <p class="sku">VVGng-LS 5x6 / 100м бухта</p>
+                        <p class="product-desc">5-гүрвалжин зэс дамжуулагчтай, хүчний кабель. Гол шугам, шкаф хооронд холболтод.</p>
+                        <div class="price-row">
+                            <span class="price">4,850,000₮</span>
+                            <span class="old-price">5,400,000₮</span>
+                        </div>
+                        <p class="stock">Бэлэн (28 бухта)</p>
+                        <div class="product-actions">
+                            <button class="add-cart-btn">САГСАНД НЭМЭХ</button>
+                            <button class="detail-btn">Дэлгэрэнгүй</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-brand="ujin" data-name="Control Cable KVV" data-price="2100000">
+                    <div class="badge">-8%</div>
+                    <div class="product-img" style="background:linear-gradient(135deg,#fbbf24,#f59e0b)"></div>
+                    <div class="product-body">
+                        <h3>U-JIN Control Cable KVV 10x1.5</h3>
+                        <p class="sku">KVV 10x1.5 / 100м бухта</p>
+                        <p class="product-desc">Удирдлагын кабель. PLC, хяналтын самбар, дохиолол, автоматжуулалтад.</p>
+                        <div class="price-row">
+                            <span class="price">2,100,000₮</span>
+                            <span class="old-price">2,280,000₮</span>
+                        </div>
+                        <p class="stock">Бэлэн (35 бухта)</p>
+                        <div class="product-actions">
+                            <button class="add-cart-btn">САГСАНД НЭМЭХ</button>
+                            <button class="detail-btn">Дэлгэрэнгүй</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-brand="ujin" data-name="Flexible Cable" data-price="1650000">
+                    <div class="badge">-15%</div>
+                    <div class="product-img" style="background:linear-gradient(135deg,#fde68a,#d97706)"></div>
+                    <div class="product-body">
+                        <h3>U-JIN Flexible Cable PVS 3x2.5</h3>
+                        <p class="sku">PVS 3x2.5 / 100м бухта</p>
+                        <p class="product-desc">Уян хатан холболтын кабель. Хөдөлгөөнт тоног төхөөрөмж, гэр ахуйн цахилгаанд.</p>
+                        <div class="price-row">
+                            <span class="price">1,650,000₮</span>
+                            <span class="old-price">1,940,000₮</span>
+                        </div>
+                        <p class="stock">Бэлэн (42 бухта)</p>
+                        <div class="product-actions">
+                            <button class="add-cart-btn">САГСАНД НЭМЭХ</button>
+                            <button class="detail-btn">Дэлгэрэнгүй</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-brand="ujin" data-name="Power Cable AVVG" data-price="18500000">
+                    <div class="badge">-5%</div>
+                    <div class="product-img" style="background:linear-gradient(135deg,#d97706,#92400e)"></div>
+                    <div class="product-body">
+                        <h3>U-JIN AVVG 4x95 кабель</h3>
+                        <p class="sku">AVVG 4x95 / 1м</p>
+                        <p class="product-desc">Хүчний кабель. 0.66/1кВ, алюминий дамжуулагчтай. Үйлдвэр, уурхай, ТП холболт.</p>
+                        <div class="price-row">
+                            <span class="price">18,500,000₮</span>
+                            <span class="old-price">19,500,000₮</span>
+                        </div>
+                        <p class="stock">Бэлэн (500м)</p>
+                        <div class="product-actions">
+                            <button class="add-cart-btn">САГСАНД НЭМЭХ</button>
+                            <button class="detail-btn">Дэлгэрэнгүй</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- SCHNEIDER -->
+                <article class="product-card" data-brand="schneider" data-name="Acti9 iC60N 2P 16A" data-price="85000">
+                    <div class="badge">-20%</div>
+                    <div class="product-img" style="background:linear-gradient(135deg,#22c55e,#15803d)"></div>
+                    <div class="product-body">
+                        <h3>Schneider Acti9 iC60N 2P 16A</h3>
+                        <p class="sku">A9F74216 / C16 / 6кА</p>
+                        <p class="product-desc">2 полюст автомат таслуур. Дотоод цахилгаан сүлжээ, тэжээлийн шугам хамгаалах.</p>
+                        <div class="price-row">
+                            <span class="price">85,000₮</span>
+                            <span class="old-price">106,000₮</span>
+                        </div>
+                        <p class="stock">Бэлэн (250)</p>
+                        <div class="product-actions">
+                            <button class="add-cart-btn">САГСАНД НЭМЭХ</button>
+                            <button class="detail-btn">Дэлгэрэнгүй</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-brand="schneider" data-name="Acti9 iC60N 3P 32A" data-price="145000">
+                    <div class="badge">-15%</div>
+                    <div class="product-img" style="background:linear-gradient(135deg,#16a34a,#14532d)"></div>
+                    <div class="product-body">
+                        <h3>Schneider Acti9 iC60N 3P 32A</h3>
+                        <p class="sku">A9F74332 / C32 / 6кА</p>
+                        <p class="product-desc">3 полюст автомат. 32А, 6кА таслах чадал. 3 фазын тоног төхөөрөмж хамгаалах.</p>
+                        <div class="price-row">
+                            <span class="price">145,000₮</span>
+                            <span class="old-price">170,000₮</span>
+                        </div>
+                        <p class="stock">Бэлэн (180)</p>
+                        <div class="product-actions">
+                            <button class="add-cart-btn">САГСАНД НЭМЭХ</button>
+                            <button class="detail-btn">Дэлгэрэнгүй</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-brand="schneider" data-name="Asfora Socket 16A" data-price="18000">
+                    <div class="badge badge-new">ШИНЭ</div>
+                    <div class="product-img" style="background:linear-gradient(135deg,#86efac,#166534)"></div>
+                    <div class="product-body">
+                        <h3>Schneider Asfora Socket 16A</h3>
+                        <p class="sku">EPH2900121 / 2P+E</p>
+                        <p class="product-desc">Беларусь үйлдвэрийн Asfora серийн розетка. 16А, 250В, хуванцар рамтай.</p>
+                        <div class="price-row">
+                            <span class="price">18,000₮</span>
+                            <span class="old-price">22,000₮</span>
+                        </div>
+                        <p class="stock">Бэлэн (500)</p>
+                        <div class="product-actions">
+                            <button class="add-cart-btn">САГСАНД НЭМЭХ</button>
+                            <button class="detail-btn">Дэлгэрэнгүй</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-brand="schneider" data-name="Asfora Switch 1-gang" data-price="15000">
+                    <div class="badge">-18%</div>
+                    <div class="product-img" style="background:linear-gradient(135deg,#4ade80,#15803d)"></div>
+                    <div class="product-body">
+                        <h3>Schneider Asfora Switch 1-gang</h3>
+                        <p class="sku">EPH0100121 / 10AX</p>
+                        <p class="product-desc">1 товчлуурт унтраалга. 10А, 250В. Дотоод засалд зориулсан цагаан өнгөтэй.</p>
+                        <div class="price-row">
+                            <span class="price">15,000₮</span>
+                            <span class="old-price">18,500₮</span>
+                        </div>
+                        <p class="stock">Бэлэн (600)</p>
+                        <div class="product-actions">
+                            <button class="add-cart-btn">САГСАНД НЭМЭХ</button>
+                            <button class="detail-btn">Дэлгэрэнгүй</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-brand="schneider" data-name="Easy9 RCBO 30mA" data-price="185000">
+                    <div class="badge">-12%</div>
+                    <div class="product-img" style="background:linear-gradient(135deg,#15803d,#052e16)"></div>
+                    <div class="product-body">
+                        <h3>Schneider Easy9 RCBO 1P+N 16A 30mA</h3>
+                        <p class="sku">EZ9D34616 / A тип</p>
+                        <p class="product-desc">Автомат + гүйдэл алдагдлын хамгаалалт нэгтгэсэн. Ванн, гал тогооны өрөөнд зориулсан.</p>
+                        <div class="price-row">
+                            <span class="price">185,000₮</span>
+                            <span class="old-price">210,000₮</span>
+                        </div>
+                        <p class="stock">Бэлэн (120)</p>
+                        <div class="product-actions">
+                            <button class="add-cart-btn">САГСАНД НЭМЭХ</button>
+                            <button class="detail-btn">Дэлгэрэнгүй</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-brand="schneider" data-name="Asfora TV+Tel Socket" data-price="22000">
+                    <div class="badge">-10%</div>
+                    <div class="product-img" style="background:linear-gradient(135deg,#84cc16,#3f6212)"></div>
+                    <div class="product-body">
+                        <h3>Schneider Asfora TV+Telephone Socket</h3>
+                        <p class="sku">EPH3200121 / TV+RJ11</p>
+                        <p class="product-desc">TV + утасны холболцоо нэгтгэсэн. Дотоод засалд зориулсан.</p>
+                        <div class="price-row">
+                            <span class="price">22,000₮</span>
+                            <span class="old-price">24,500₮</span>
+                        </div>
+                        <p class="stock">Бэлэн (350)</p>
+                        <div class="product-actions">
+                            <button class="add-cart-btn">САГСАНД НЭМЭХ</button>
+                            <button class="detail-btn">Дэлгэрэнгүй</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- JINKO -->
+                <article class="product-card" data-brand="jinko" data-name="Jinko Tiger Pro 540W" data-price="185000">
+                    <div class="badge">-15%</div>
+                    <div class="product-img" style="background:linear-gradient(135deg,#3b82f6,#1d4ed8)"></div>
+                    <div class="product-body">
+                        <h3>Jinko Tiger Pro 540W Mono</h3>
+                        <p class="sku">JKM540M-72HL4-V / 21.6% үр ашиг</p>
+                        <p class="product-desc">72 эс бүхий monocrystalline нарны хавтан. Half-cell технологи, 540Вт дээд хүчин чадал.</p>
+                        <div class="price-row">
+                            <span class="price">185,000₮</span>
+                            <span class="old-price">218,000₮</span>
+                        </div>
+                        <p class="stock">Бэлэн (200 ширхэг)</p>
+                        <div class="product-actions">
+                            <button class="add-cart-btn">САГСАНД НЭМЭХ</button>
+                            <button class="detail-btn">Дэлгэрэнгүй</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-brand="jinko" data-name="Jinko Tiger Pro 545W" data-price="190000">
+                    <div class="badge badge-new">ШИНЭ</div>
+                    <div class="product-img" style="background:linear-gradient(135deg,#2563eb,#1e40af)"></div>
+                    <div class="product-body">
+                        <h3>Jinko Tiger Pro 545W Mono</h3>
+                        <p class="sku">JKM545M-72HL4-V / 21.7% үр ашиг</p>
+                        <p class="product-desc">Multi-busbar технологи. Доош чиглэсэн гүйдэл 15А, PID тэсвэртэй.</p>
+                        <div class="price-row">
+                            <span class="price">190,000₮</span>
+                            <span class="old-price">225,000₮</span>
+                        </div>
+                        <p class="stock">Бэлэн (150 ширхэг)</p>
+                        <div class="product-actions">
+                            <button class="add-cart-btn">САГСАНД НЭМЭХ</button>
+                            <button class="detail-btn">Дэлгэрэнгүй</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-brand="jinko" data-name="Jinko N-type 580W" data-price="245000">
+                    <div class="badge">-10%</div>
+                    <div class="product-img" style="background:linear-gradient(135deg,#60a5fa,#1e3a8a)"></div>
+                    <div class="product-body">
+                        <h3>Jinko Tiger Neo N-type 580W</h3>
+                        <p class="sku">JKM580N-72HL4-V / 22.0% үр ашиг</p>
+                        <p class="product-desc">N-type TOPCon технологи. Илүү өндөр үр ашиг, бага температурын коэффициент.</p>
+                        <div class="price-row">
+                            <span class="price">245,000₮</span>
+                            <span class="old-price">272,000₮</span>
+                        </div>
+                        <p class="stock">Бэлэн (80 ширхэг)</p>
+                        <div class="product-actions">
+                            <button class="add-cart-btn">САГСАНД НЭМЭХ</button>
+                            <button class="detail-btn">Дэлгэрэнгүй</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-brand="jinko" data-name="Jinko Bifacial 600W" data-price="285000">
+                    <div class="badge">-8%</div>
+                    <div class="product-img" style="background:linear-gradient(135deg,#93c5fd,#1d4ed8)"></div>
+                    <div class="product-body">
+                        <h3>Jinko Tiger Pro Bifacial 600W</h3>
+                        <p class="sku">JKM600M-72HL4-BDVP / 21.4% үр ашиг</p>
+                        <p class="product-desc">Хоёр талдаа гэрэл хураах bifacial хавтан. 30 жилийн баталгаа.</p>
+                        <div class="price-row">
+                            <span class="price">285,000₮</span>
+                            <span class="old-price">310,000₮</span>
+                        </div>
+                        <p class="stock">Бэлэн (60 ширхэг)</p>
+                        <div class="product-actions">
+                            <button class="add-cart-btn">САГСАНД НЭМЭХ</button>
+                            <button class="detail-btn">Дэлгэрэнгүй</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-brand="jinko" data-name="Jinko 550W" data-price="195000">
+                    <div class="badge">-12%</div>
+                    <div class="product-img" style="background:linear-gradient(135deg,#1d4ed8,#172554)"></div>
+                    <div class="product-body">
+                        <h3>Jinko Cheetah 550W Mono</h3>
+                        <p class="sku">JKM550M-72HL4-V / 21.0% үр ашиг</p>
+                        <p class="product-desc">Сайн үнэ/чинээгээр тэнцвэртэй сонголт. 550Вт, 12 жилийн баталгаа.</p>
+                        <div class="price-row">
+                            <span class="price">195,000₮</span>
+                            <span class="old-price">222,000₮</span>
+                        </div>
+                        <p class="stock">Бэлэн (100 ширхэг)</p>
+                        <div class="product-actions">
+                            <button class="add-cart-btn">САГСАНД НЭМЭХ</button>
+                            <button class="detail-btn">Дэлгэрэнгүй</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- EATON -->
+                <article class="product-card" data-brand="eaton" data-name="Cable Tray 100x50" data-price="45000">
+                    <div class="badge">-10%</div>
+                    <div class="product-img" style="background:linear-gradient(135deg,#8b5cf6,#6d28d9)"></div>
+                    <div class="product-body">
+                        <h3>Eaton B-Line Cable Tray 100x50</h3>
+                        <p class="sku">B-Line 100x50 / 3м</p>
+                        <p class="product-desc">Ган цайрдсан перфорацийн кабель тавиур. 100мм өргөн, 50мм өндөр, 3м урт.</p>
+                        <div class="price-row">
+                            <span class="price">45,000₮</span>
+                            <span class="old-price">50,000₮</span>
+                        </div>
+                        <p class="stock">Бэлэн (120)</p>
+                        <div class="product-actions">
+                            <button class="add-cart-btn">САГСАНД НЭМЭХ</button>
+                            <button class="detail-btn">Дэлгэрэнгүй</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-brand="eaton" data-name="Cable Tray 200x100" data-price="78000">
+                    <div class="badge badge-new">ШИНЭ</div>
+                    <div class="product-img" style="background:linear-gradient(135deg,#a78bfa,#5b21b6)"></div>
+                    <div class="product-body">
+                        <h3>Eaton B-Line Cable Tray 200x100</h3>
+                        <p class="sku">B-Line 200x100 / 3м</p>
+                        <p class="product-desc">Хүнд даацын ган кабель тавиур. 200мм өргөн, 100мм өндөр. Үйлдвэр, ТП-д.</p>
+                        <div class="price-row">
+                            <span class="price">78,000₮</span>
+                            <span class="old-price">90,000₮</span>
+                        </div>
+                        <p class="stock">Бэлэн (85)</p>
+                        <div class="product-actions">
+                            <button class="add-cart-btn">САГСАНД НЭМЭХ</button>
+                            <button class="detail-btn">Дэлгэрэнгүй</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-brand="eaton" data-name="Cable Ladder 300x100" data-price="185000">
+                    <div class="badge">-12%</div>
+                    <div class="product-img" style="background:linear-gradient(135deg,#7c3aed,#4c1d95)"></div>
+                    <div class="product-body">
+                        <h3>Eaton B-Line Cable Ladder 300x100</h3>
+                        <p class="sku">B-Line CL 300x100 / 3м</p>
+                        <p class="product-desc">Хүнд даацын кабель шат. 300мм өргөн, 100мм өндөр. Их хэмжээний кабель хураах.</p>
+                        <div class="price-row">
+                            <span class="price">185,000₮</span>
+                            <span class="old-price">210,000₮</span>
+                        </div>
+                        <p class="stock">Бэлэн (40)</p>
+                        <div class="product-actions">
+                            <button class="add-cart-btn">САГСАНД НЭМЭХ</button>
+                            <button class="detail-btn">Дэлгэрэнгүй</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-brand="eaton" data-name="Wire Mesh Tray" data-price="65000">
+                    <div class="badge">-15%</div>
+                    <div class="product-img" style="background:linear-gradient(135deg,#c084fc,#7e22ce)"></div>
+                    <div class="product-body">
+                        <h3>Eaton B-Line Wire Mesh Tray 50x50</h3>
+                        <p class="sku">B-Line WM 50x50 / 3м</p>
+                        <p class="product-desc">Ус нэвтрүүлдэггүй утасан торон тавиур. Дата төв, оффис, CNC тоног төхөөрөмжид.</p>
+                        <div class="price-row">
+                            <span class="price">65,000₮</span>
+                            <span class="old-price">76,000₮</span>
+                        </div>
+                        <p class="stock">Бэлэн (95)</p>
+                        <div class="product-actions">
+                            <button class="add-cart-btn">САГСАНД НЭМЭХ</button>
+                            <button class="detail-btn">Дэлгэрэнгүй</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-brand="eaton" data-name="Tray Fittings" data-price="12000">
+                    <div class="badge">-18%</div>
+                    <div class="product-img" style="background:linear-gradient(135deg,#d8b4fe,#6b21a8)"></div>
+                    <div class="product-body">
+                        <h3>Eaton B-Line Tray Coupler Set</h3>
+                        <p class="sku">B-Line Splice Plate / 10 хос</p>
+                        <p class="product-desc">Кабель тавиур холбох splice plate, болт самар багц. Ган цайрдсан.</p>
+                        <div class="price-row">
+                            <span class="price">12,000₮</span>
+                            <span class="old-price">14,500₮</span>
+                        </div>
+                        <p class="stock">Бэлэн (300)</p>
+                        <div class="product-actions">
+                            <button class="add-cart-btn">САГСАНД НЭМЭХ</button>
+                            <button class="detail-btn">Дэлгэрэнгүй</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-brand="eaton" data-name="Cable Tray Cover" data-price="25000">
+                    <div class="badge">-10%</div>
+                    <div class="product-img" style="background:linear-gradient(135deg,#6d28d9,#3b0764)"></div>
+                    <div class="product-body">
+                        <h3>Eaton B-Line Cable Tray Cover 200mm</h3>
+                        <p class="sku">B-Line Cover 200 / 3м</p>
+                        <p class="product-desc">Кабель тавиурын дээд таглаа. Тоос, борооноос хамгаална.</p>
+                        <div class="price-row">
+                            <span class="price">25,000₮</span>
+                            <span class="old-price">28,000₮</span>
+                        </div>
+                        <p class="stock">Бэлэн (150)</p>
+                        <div class="product-actions">
+                            <button class="add-cart-btn">САГСАНД НЭМЭХ</button>
+                            <button class="detail-btn">Дэлгэрэнгүй</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- MIDEA -->
+                <article class="product-card" data-brand="midea" data-name="LED Panel 60x60" data-price="115000">
+                    <div class="badge">-18%</div>
+                    <div class="product-img" style="background:linear-gradient(135deg,#06b6d4,#0891b2)"></div>
+                    <div class="product-body">
+                        <h3>Midea LED Panel 60x60 40W</h3>
+                        <p class="sku">MD-PL6060-40W / 6500K / 4000lm</p>
+                        <p class="product-desc">Armstrong таазанд зориулсан LED панель. 60x60, 40W, 4000 люмен, 6500K хүйтэн гэрэл.</p>
+                        <div class="price-row">
+                            <span class="price">115,000₮</span>
+                            <span class="old-price">140,000₮</span>
+                        </div>
+                        <p class="stock">Бэлэн (200)</p>
+                        <div class="product-actions">
+                            <button class="add-cart-btn">САГСАНД НЭМЭХ</button>
+                            <button class="detail-btn">Дэлгэрэнгүй</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-brand="midea" data-name="LED Downlight 12W" data-price="42000">
+                    <div class="badge">-16%</div>
+                    <div class="product-img" style="background:linear-gradient(135deg,#22d3ee,#0e7490)"></div>
+                    <div class="product-body">
+                        <h3>Midea LED Downlight 12W 4000K</h3>
+                        <p class="sku">MD-DL-12W-NW / 960lm</p>
+                        <p class="product-desc">Дүүрэн гэрэлтүүлэгтэй LED downlight. 12W, 4000K, 960 люмен, хөндий суурьлуулалт.</p>
+                        <div class="price-row">
+                            <span class="price">42,000₮</span>
+                            <span class="old-price">50,000₮</span>
+                        </div>
+                        <p class="stock">Бэлэн (350)</p>
+                        <div class="product-actions">
+                            <button class="add-cart-btn">САГСАНД НЭМЭХ</button>
+                            <button class="detail-btn">Дэлгэрэнгүй</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-brand="midea" data-name="LED Floodlight 100W" data-price="165000">
+                    <div class="badge badge-new">ШИНЭ</div>
+                    <div class="product-img" style="background:linear-gradient(135deg,#67e8f9,#155e75)"></div>
+                    <div class="product-body">
+                        <h3>Midea LED Floodlight 100W IP65</h3>
+                        <p class="sku">MD-FL-100W-IP65 / 9000lm</p>
+                        <p class="product-desc">Гадна талбайн прожектор. 100W, 9000 люмен, IP65 ус нэвтрүүлдэггүй.</p>
+                        <div class="price-row">
+                            <span class="price">165,000₮</span>
+                            <span class="old-price">195,000₮</span>
+                        </div>
+                        <p class="stock">Бэлэн (95)</p>
+                        <div class="product-actions">
+                            <button class="add-cart-btn">САГСАНД НЭМЭХ</button>
+                            <button class="detail-btn">Дэлгэрэнгүй</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-brand="midea" data-name="LED Tube T8 18W" data-price="18000">
+                    <div class="badge">-20%</div>
+                    <div class="product-img" style="background:linear-gradient(135deg,#5eead4,#0f766e)"></div>
+                    <div class="product-body">
+                        <h3>Midea LED Tube T8 18W 1200mm</h3>
+                        <p class="sku">MD-T8-18W / 6500K / 1800lm</p>
+                        <p class="product-desc">Хуучин флуоресцент гэрлийн оронд зориулсан LED хоолой. 1200мм, G13 суурь.</p>
+                        <div class="price-row">
+                            <span class="price">18,000₮</span>
+                            <span class="old-price">22,500₮</span>
+                        </div>
+                        <p class="stock">Бэлэн (500)</p>
+                        <div class="product-actions">
+                            <button class="add-cart-btn">САГСАНД НЭМЭХ</button>
+                            <button class="detail-btn">Дэлгэрэнгүй</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-brand="midea" data-name="LED Street Light 100W" data-price="175000">
+                    <div class="badge">-12%</div>
+                    <div class="product-img" style="background:linear-gradient(135deg,#0e7490,#164e63)"></div>
+                    <div class="product-body">
+                        <h3>Midea LED Street Light 100W</h3>
+                        <p class="sku">MD-SL-100W / 12000lm / 5000K</p>
+                        <p class="product-desc">Гудамжны гэрэл. 100W, 12000 люмен, 5000K. Доош чиглэсэн гэрэл.</p>
+                        <div class="price-row">
+                            <span class="price">175,000₮</span>
+                            <span class="old-price">199,000₮</span>
+                        </div>
+                        <p class="stock">Бэлэн (75)</p>
+                        <div class="product-actions">
+                            <button class="add-cart-btn">САГСАНД НЭМЭХ</button>
+                            <button class="detail-btn">Дэлгэрэнгүй</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-brand="midea" data-name="LED Strip 5050" data-price="55000">
+                    <div class="badge">-10%</div>
+                    <div class="product-img" style="background:linear-gradient(135deg,#14b8a6,#115e59)"></div>
+                    <div class="product-body">
+                        <h3>Midea LED Strip 5050 5m Warm White</h3>
+                        <p class="sku">MD-LS-5050-WW / 3000K / адаптертай</p>
+                        <p class="product-desc">5 метр LED тууз + 12V адаптер. Дотоод засал, тавилгын гэрэлтүүлэгт.</p>
+                        <div class="price-row">
+                            <span class="price">55,000₮</span>
+                            <span class="old-price">61,000₮</span>
+                        </div>
+                        <p class="stock">Бэлэн (220)</p>
+                        <div class="product-actions">
+                            <button class="add-cart-btn">САГСАНД НЭМЭХ</button>
+                            <button class="detail-btn">Дэлгэрэнгүй</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- CHINT -->
+                <article class="product-card" data-brand="chint" data-name="CHINT NXB-63 1P 16A" data-price="18000">
+                    <div class="badge">-22%</div>
+                    <div class="product-img" style="background:linear-gradient(135deg,#3b82f6,#1e40af)"></div>
+                    <div class="product-body">
+                        <h3>CHINT NXB-63 1P 16A</h3>
+                        <p class="sku">NXB-63 1P C16 / 6кА</p>
+                        <p class="product-desc">1 полюст мини автомат. 16А, C характеристик, 6кА таслах чадал.</p>
+                        <div class="price-row">
+                            <span class="price">18,000₮</span>
+                            <span class="old-price">23,000₮</span>
+                        </div>
+                        <p class="stock">Бэлэн (400)</p>
+                        <div class="product-actions">
+                            <button class="add-cart-btn">САГСАНД НЭМЭХ</button>
+                            <button class="detail-btn">Дэлгэрэнгүй</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-brand="chint" data-name="CHINT NXB-63 2P 25A" data-price="32000">
+                    <div class="badge">-18%</div>
+                    <div class="product-img" style="background:linear-gradient(135deg,#2563eb,#1e3a8a)"></div>
+                    <div class="product-body">
+                        <h3>CHINT NXB-63 2P 25A</h3>
+                        <p class="sku">NXB-63 2P C25 / 6кА</p>
+                        <p class="product-desc">2 полюст автомат таслуур. 25А, C характеристик. Тэжээлийн шугамд.</p>
+                        <div class="price-row">
+                            <span class="price">32,000₮</span>
+                            <span class="old-price">39,000₮</span>
+                        </div>
+                        <p class="stock">Бэлэн (300)</p>
+                        <div class="product-actions">
+                            <button class="add-cart-btn">САГСАНД НЭМЭХ</button>
+                            <button class="detail-btn">Дэлгэрэнгүй</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-brand="chint" data-name="CHINT NXB-63 3P 32A" data-price="48000">
+                    <div class="badge badge-new">ШИНЭ</div>
+                    <div class="product-img" style="background:linear-gradient(135deg,#60a5fa,#1d4ed8)"></div>
+                    <div class="product-body">
+                        <h3>CHINT NXB-63 3P 32A</h3>
+                        <p class="sku">NXB-63 3P C32 / 6кА</p>
+                        <p class="product-desc">3 полюст автомат. 32А, 3 фазын тоног төхөөрөмж, хөдөлгүүрийн хамгаалалт.</p>
+                        <div class="price-row">
+                            <span class="price">48,000₮</span>
+                            <span class="old-price">58,000₮</span>
+                        </div>
+                        <p class="stock">Бэлэн (220)</p>
+                        <div class="product-actions">
+                            <button class="add-cart-btn">САГСАНД НЭМЭХ</button>
+                            <button class="detail-btn">Дэлгэрэнгүй</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-brand="chint" data-name="CHINT NXBLE RCBO" data-price="95000">
+                    <div class="badge">-15%</div>
+                    <div class="product-img" style="background:linear-gradient(135deg,#1d4ed8,#172554)"></div>
+                    <div class="product-body">
+                        <h3>CHINT NXBLE RCBO 1P+N 16A 30mA</h3>
+                        <p class="sku">NXBLE-32 1P+N C16 / 30mA</p>
+                        <p class="product-desc">Автомат + гүйдэл алдагдлын хамгаалалт нэгдсэн. Чийгтэй өрөөнд зориулсан.</p>
+                        <div class="price-row">
+                            <span class="price">95,000₮</span>
+                            <span class="old-price">112,000₮</span>
+                        </div>
+                        <p class="stock">Бэлэн (150)</p>
+                        <div class="product-actions">
+                            <button class="add-cart-btn">САГСАНД НЭМЭХ</button>
+                            <button class="detail-btn">Дэлгэрэнгүй</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-brand="chint" data-name="CHINT Contactor" data-price="65000">
+                    <div class="badge">-10%</div>
+                    <div class="product-img" style="background:linear-gradient(135deg,#93c5fd,#1e40af)"></div>
+                    <div class="product-body">
+                        <h3>CHINT NC1 Contactor 25A 220V</h3>
+                        <p class="sku">NC1-2510 / 3P+NO</p>
+                        <p class="product-desc">Хөдөлгүүр удирдах контактор. 25А, 220V, 11кВт хүртэл хөдөлгүүрт.</p>
+                        <div class="price-row">
+                            <span class="price">65,000₮</span>
+                            <span class="old-price">72,000₮</span>
+                        </div>
+                        <p class="stock">Бэлэн (180)</p>
+                        <div class="product-actions">
+                            <button class="add-cart-btn">САГСАНД НЭМЭХ</button>
+                            <button class="detail-btn">Дэлгэрэнгүй</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-brand="chint" data-name="CHINT Thermal Relay" data-price="35000">
+                    <div class="badge">-12%</div>
+                    <div class="product-img" style="background:linear-gradient(135deg,#bfdbfe,#1d4ed8)"></div>
+                    <div class="product-body">
+                        <h3>CHINT NR2 Thermal Relay 17-25A</h3>
+                        <p class="sku">NR2-25 / 17-25A</p>
+                        <p class="product-desc">Хөдөлгүүрийн халалтын хамгаалалт. 17-25А хүртэл тохируулга.</p>
+                        <div class="price-row">
+                            <span class="price">35,000₮</span>
+                            <span class="old-price">40,000₮</span>
+                        </div>
+                        <p class="stock">Бэлэн (200)</p>
+                        <div class="product-actions">
+                            <button class="add-cart-btn">САГСАНД НЭМЭХ</button>
+                            <button class="detail-btn">Дэлгэрэнгүй</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- SCHNEIDER BREAKERS -->
+                <article class="product-card" data-brand="schneider-breaker" data-name="Schneider Easy9 1P 16A" data-price="28000">
+                    <div class="badge">-15%</div>
+                    <div class="product-img" style="background:linear-gradient(135deg,#ec4899,#be185d)"></div>
+                    <div class="product-body">
+                        <h3>Schneider Easy9 1P 16A</h3>
+                        <p class="sku">EZ9F34116 / C16 / 4.5кА</p>
+                        <p class="product-desc">Эдийн засгийн Easy9 серийн 1 полюст автомат. 16А, 4.5кА.</p>
+                        <div class="price-row">
+                            <span class="price">28,000₮</span>
+                            <span class="old-price">33,000₮</span>
+                        </div>
+                        <p class="stock">Бэлэн (300)</p>
+                        <div class="product-actions">
+                            <button class="add-cart-btn">САГСАНД НЭМЭХ</button>
+                            <button class="detail-btn">Дэлгэрэнгүй</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-brand="schneider-breaker" data-name="Schneider Acti9 3P 63A" data-price="185000">
+                    <div class="badge badge-new">ШИНЭ</div>
+                    <div class="product-img" style="background:linear-gradient(135deg,#f472b6,#9d174d)"></div>
+                    <div class="product-body">
+                        <h3>Schneider Acti9 iC60N 3P 63A</h3>
+                        <p class="sku">A9F74363 / C63 / 6кА</p>
+                        <p class="product-desc">Ахуйн бус хэрэглээний 3 полюст автомат. 63А, 6кА таслах чадал.</p>
+                        <div class="price-row">
+                            <span class="price">185,000₮</span>
+                            <span class="old-price">215,000₮</span>
+                        </div>
+                        <p class="stock">Бэлэн (90)</p>
+                        <div class="product-actions">
+                            <button class="add-cart-btn">САГСАНД НЭМЭХ</button>
+                            <button class="detail-btn">Дэлгэрэнгүй</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-brand="schneider-breaker" data-name="Schneider Masterpact" data-price="8500000">
+                    <div class="badge">-8%</div>
+                    <div class="product-img" style="background:linear-gradient(135deg,#db2777,#831843)"></div>
+                    <div class="product-body">
+                        <h3>Schneider Masterpact MTZ 1000A</h3>
+                        <p class="sku">MTZ1 10H1 / 3P / 50кА</p>
+                        <p class="product-desc">Хүчний агаарын автомат таслуур. 1000А, 3 полюс, 50кА таслах чадал.</p>
+                        <div class="price-row">
+                            <span class="price">8,500,000₮</span>
+                            <span class="old-price">9,250,000₮</span>
+                        </div>
+                        <p class="stock">Бэлэн (8)</p>
+                        <div class="product-actions">
+                            <button class="add-cart-btn">САГСАНД НЭМЭХ</button>
+                            <button class="detail-btn">Дэлгэрэнгүй</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-brand="schneider-breaker" data-name="Schneider Compact NSX" data-price="1850000">
+                    <div class="badge">-10%</div>
+                    <div class="product-img" style="background:linear-gradient(135deg,#be185d,#500724)"></div>
+                    <div class="product-body">
+                        <h3>Schneider Compact NSX 250A</h3>
+                        <p class="sku">LV432693 / 3P / 36кА</p>
+                        <p class="product-desc">Ул бүрхүүлгүй автомат таслуур. 250А, 3 полюс, 36кА. Үйлдвэрийн самбарт.</p>
+                        <div class="price-row">
+                            <span class="price">1,850,000₮</span>
+                            <span class="old-price">2,050,000₮</span>
+                        </div>
+                        <p class="stock">Бэлэн (18)</p>
+                        <div class="product-actions">
+                            <button class="add-cart-btn">САГСАНД НЭМЭХ</button>
+                            <button class="detail-btn">Дэлгэрэнгүй</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-brand="schneider-breaker" data-name="Schneider Acti9 4P 40A" data-price="245000">
+                    <div class="badge">-12%</div>
+                    <div class="product-img" style="background:linear-gradient(135deg,#9d174d,#4a044e)"></div>
+                    <div class="product-body">
+                        <h3>Schneider Acti9 iC60N 4P 40A</h3>
+                        <p class="sku">A9F74440 / C40 / 6кА</p>
+                        <p class="product-desc">4 полюст автомат. 3 фаз + нейтраль шугам хамгаалах.</p>
+                        <div class="price-row">
+                            <span class="price">245,000₮</span>
+                            <span class="old-price">278,000₮</span>
+                        </div>
+                        <p class="stock">Бэлэн (75)</p>
+                        <div class="product-actions">
+                            <button class="add-cart-btn">САГСАНД НЭМЭХ</button>
+                            <button class="detail-btn">Дэлгэрэнгүй</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-brand="schneider-breaker" data-name="Schneider Vigi iC60" data-price="320000">
+                    <div class="badge">-10%</div>
+                    <div class="product-img" style="background:linear-gradient(135deg,#f9a8d4,#be185d)"></div>
+                    <div class="product-body">
+                        <h3>Schneider Vigi iC60 4P 40A 30mA</h3>
+                        <p class="sku">A9D54440 / 30mA / AC тип</p>
+                        <p class="product-desc">4 полюст гүйдэл алдагдлын хамгаалалт. 40А, 30мА.</p>
+                        <div class="price-row">
+                            <span class="price">320,000₮</span>
+                            <span class="old-price">355,000₮</span>
+                        </div>
+                        <p class="stock">Бэлэн (45)</p>
+                        <div class="product-actions">
+                            <button class="add-cart-btn">САГСАНД НЭМЭХ</button>
+                            <button class="detail-btn">Дэлгэрэнгүй</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- BURNDY -->
+                <article class="product-card" data-brand="burndy" data-name="Grounding Rod" data-price="45000">
+                    <div class="badge">-10%</div>
+                    <div class="product-img" style="background:linear-gradient(135deg,#84cc16,#4d7c0f)"></div>
+                    <div class="product-body">
+                        <h3>Burndy Copperbond Ground Rod 14.2mm</h3>
+                        <p class="sku">CR1421500G / 1.5м</p>
+                        <p class="product-desc">Зэс хальстай ган газардуулах штанг. 14.2мм диаметр, 1.5м урт.</p>
+                        <div class="price-row">
+                            <span class="price">45,000₮</span>
+                            <span class="old-price">50,000₮</span>
+                        </div>
+                        <p class="stock">Бэлэн (200)</p>
+                        <div class="product-actions">
+                            <button class="add-cart-btn">САГСАНД НЭМЭХ</button>
+                            <button class="detail-btn">Дэлгэрэнгүй</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-brand="burndy" data-name="Ground Clamp" data-price="12000">
+                    <div class="badge">-15%</div>
+                    <div class="product-img" style="background:linear-gradient(135deg,#a3e635,#3f6212)"></div>
+                    <div class="product-body">
+                        <h3>Burndy Ground Rod Clamp 5/8"</h3>
+                        <p class="sku">GRC58 / Bronze</p>
+                        <p class="product-desc">Газардуулах штанг болон кабель холбох хомут. Бронз материал.</p>
+                        <div class="price-row">
+                            <span class="price">12,000₮</span>
+                            <span class="old-price">14,000₮</span>
+                        </div>
+                        <p class="stock">Бэлэн (400)</p>
+                        <div class="product-actions">
+                            <button class="add-cart-btn">САГСАНД НЭМЭХ</button>
+                            <button class="detail-btn">Дэлгэрэнгүй</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-brand="burndy" data-name="Compression Lug" data-price="2500">
+                    <div class="badge badge-new">ШИНЭ</div>
+                    <div class="product-img" style="background:linear-gradient(135deg,#bef264,#3d6e0e)"></div>
+                    <div class="product-body">
+                        <h3>Burndy Compression Lug 50mm² M8</h3>
+                        <p class="sku">YA50-M8 / Copper</p>
+                        <p class="product-desc">Зэс пресслэх хөндий. 50мм² кабельд, M8 нүхтэй. 100 ширхэг / багц.</p>
+                        <div class="price-row">
+                            <span class="price">2,500₮</span>
+                            <span class="old-price">3,000₮</span>
+                        </div>
+                        <p class="stock">Бэлэн (1000 багц)</p>
+                        <div class="product-actions">
+                            <button class="add-cart-btn">САГСАНД НЭМЭХ</button>
+                            <button class="detail-btn">Дэлгэрэнгүй</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-brand="burndy" data-name="Ground Busbar" data-price="85000">
+                    <div class="badge">-12%</div>
+                    <div class="product-img" style="background:linear-gradient(135deg,#65a30d,#365314)"></div>
+                    <div class="product-body">
+                        <h3>Burndy Ground Busbar 6x50x300mm</h3>
+                        <p class="sku">GBB-650300 / Tinned Copper</p>
+                        <p class="product-desc">Хайчилсан зэс газардуулгын шин. 6x50x300мм, цайрдсан.</p>
+                        <div class="price-row">
+                            <span class="price">85,000₮</span>
+                            <span class="old-price">96,000₮</span>
+                        </div>
+                        <p class="stock">Бэлэн (60)</p>
+                        <div class="product-actions">
+                            <button class="add-cart-btn">САГСАНД НЭМЭХ</button>
+                            <button class="detail-btn">Дэлгэрэнгүй</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-brand="burndy" data-name="Exothermic Welding" data-price="185000">
+                    <div class="badge">-8%</div>
+                    <div class="product-img" style="background:linear-gradient(135deg,#4d7c0f,#1a2e05)"></div>
+                    <div class="product-body">
+                        <h3>Burndy Exothermic Welding Kit</h3>
+                        <p class="sku">PLUSKIT / 20 shots</p>
+                        <p class="product-desc">Газардуулгын холболтыг гагнах экзотермик гагнуурын багц. 20 удаагийн хэрэглээ.</p>
+                        <div class="price-row">
+                            <span class="price">185,000₮</span>
+                            <span class="old-price">201,000₮</span>
+                        </div>
+                        <p class="stock">Бэлэн (35)</p>
+                        <div class="product-actions">
+                            <button class="add-cart-btn">САГСАНД НЭМЭХ</button>
+                            <button class="detail-btn">Дэлгэрэнгүй</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-brand="burndy" data-name="Grounding Conductor" data-price="65000">
+                    <div class="badge">-10%</div>
+                    <div class="product-img" style="background:linear-gradient(135deg,#84cc16,#14532d)"></div>
+                    <div class="product-body">
+                        <h3>Burndy Bare Copper Wire 25mm²</h3>
+                        <p class="sku">BCW25 / 100м бухта</p>
+                        <p class="product-desc">Хувцаслаагүй зэс газардуулгын утас. 25мм², 100м бухта.</p>
+                        <div class="price-row">
+                            <span class="price">65,000₮</span>
+                            <span class="old-price">72,000₮</span>
+                        </div>
+                        <p class="stock">Бэлэн (80 бухта)</p>
+                        <div class="product-actions">
+                            <button class="add-cart-btn">САГСАНД НЭМЭХ</button>
+                            <button class="detail-btn">Дэлгэрэнгүй</button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact section -->
+    <section id="contact" class="contact section section-alt">
+        <div class="container">
+            <h2 class="section-title">ХОЛБОО БАРИХ</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="info-block">
+                        <h4>ХАЯГ</h4>
+                        <p>MMS Green Building, Archivist street 512, Хан-Уул дүүрэг, Улаанбаатар 17101, Монгол</p>
+                    </div>
+                    <div class="info-block">
+                        <h4>УТАС</h4>
+                        <p>+976-7711-1999, 89664141</p>
+                    </div>
+                    <div class="info-block">
+                        <h4>ИМЭЙЛ</h4>
+                        <p>sales@source.mn</p>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <h3>ИЛГЭЭХ МАЯГТ</h3>
+                    <div class="form-row">
+                        <input type="text" placeholder="ОВОГ" required>
+                        <input type="text" placeholder="НЭР" required>
+                    </div>
+                    <div class="form-row">
+                        <input type="tel" placeholder="УТАС" required>
+                        <input type="email" placeholder="ИМЭЙЛ" required>
+                    </div>
+                    <textarea rows="5" placeholder="МЕССЭЖ" required></textarea>
+                    <button type="submit" class="btn btn-primary">ИЛГЭЭХ</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>MMS</h3>
+                    <p>The Future Is Electric. Professional electrical products supplier for Mining, Construction and Energy sector of Mongolia.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>БҮТЭЭГДЭХҮҮН</h4>
+                    <ul>
+                        <li><a href="#">Switchboard</a></li>
+                        <li><a href="#">Solar system</a></li>
+                        <li><a href="#">Cable</a></li>
+                        <li><a href="#">Battery tools</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>КОМПАНИ</h4>
+                    <ul>
+                        <li><a href="#">Бидний тухай</a></li>
+                        <li><a href="#contact">Холбоо барих</a></li>
+                        <li><a href="#">Career</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>ХОЛБОГДОХ</h4>
+                    <ul>
+                        <li>+976-7711-1999</li>
+                        <li>89664141</li>
+                        <li>sales@source.mn</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 MMS - The Future Is Electric. Бүх эрх хуулиар хамгаалагдсан.</p>
+                <div class="footer-links">
+                    <a href="#">Үйлчилгээний нөхцөл</a>
+                    <a href="#">Нууцлалын бодлого</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating side buttons -->
+    <div class="floating-buttons">
+        <a href="tel:+97677111999" class="floating-btn" aria-label="Утас">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+        </a>
+        <a href="#contact" class="floating-btn" aria-label="Чат">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+        </a>
+        <a href="#products" class="floating-btn sale-floating" aria-label="Бүтээгдэхүүн">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 11 12 14 22 4"></polyline><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg>
+        </a>
+    </div>
+
+    <!-- Product detail modal -->
+    <div class="modal-overlay" id="productModal">
+        <div class="modal">
+            <button class="modal-close" id="modalClose" aria-label="Хаах">×</button>
+            <div class="modal-content">
+                <div class="modal-img" id="modalImg"></div>
+                <div class="modal-info">
+                    <span class="modal-brand" id="modalBrand"></span>
+                    <h2 id="modalTitle"></h2>
+                    <p class="modal-sku" id="modalSku"></p>
+                    <p class="modal-desc" id="modalDesc"></p>
+                    <ul class="modal-specs" id="modalSpecs"></ul>
+                    <div class="modal-price-row">
+                        <span class="modal-price" id="modalPrice"></span>
+                        <span class="modal-old-price" id="modalOldPrice"></span>
+                    </div>
+                    <p class="modal-stock" id="modalStock"></p>
+                    <div class="modal-actions">
+                        <button class="btn btn-primary" id="modalAddCart">САГСАНД НЭМЭХ</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

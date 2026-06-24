@@ -779,6 +779,36 @@ body {
 .modal-img {
     min-height: 360px;
     background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 24px;
+}
+
+.modal-brand-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    border-radius: 12px;
+    padding: 8px 16px;
+    box-shadow: var(--shadow-md);
+    transition: transform var(--transition), box-shadow var(--transition);
+    text-decoration: none;
+    z-index: 2;
+}
+
+.modal-brand-link:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+}
+
+.modal-brand-link img {
+    max-height: 36px;
+    max-width: 120px;
+    object-fit: contain;
+    display: block;
 }
 
 .modal-info {
@@ -797,6 +827,13 @@ body {
     font-weight: 800;
     margin-bottom: 14px;
     width: fit-content;
+    text-decoration: none;
+    transition: background var(--transition), color var(--transition);
+}
+
+.modal-brand:hover {
+    background: var(--primary);
+    color: white;
 }
 
 .modal-info h2 {

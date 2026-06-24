@@ -10,6 +10,19 @@ document.addEventListener('DOMContentLoaded', () => {
     const productModal = document.getElementById('productModal');
     const modalClose = document.getElementById('modalClose');
 
+    const brandLogos = {
+        'milwaukee': 'images/milwaukee.png',
+        'senergy': 'images/senergy.jpg',
+        'ujin': 'images/ujin.jpg',
+        'schneider': 'images/schneider.jpg',
+        'jinko': 'images/jinko.jpg',
+        'eaton': 'images/eaton.jpg',
+        'midea': 'images/midea.jpg',
+        'chint': 'images/chint.png',
+        'schneider-breaker': 'images/schneider-breaker.jpg',
+        'burndy': 'images/burndy.jpg'
+    };
+
     const brandNames = {
         'milwaukee': 'MILWAUKEE БАГАЖ',
         'senergy': 'SENERGY САМБАР',
@@ -233,6 +246,32 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('modalOldPrice').textContent = oldPrice;
         document.getElementById('modalStock').textContent = '';
         document.getElementById('modalImg').style.background = bg;
+
+        const logoPath = brandLogos[brand] || '';
+        const brandLink = document.getElementById('modalBrandLink');
+        const brandLogo = document.getElementById('modalBrandLogo');
+        const brandTextLink = document.getElementById('modalBrandTextLink');
+
+        if (logoPath) {
+            brandLogo.src = logoPath;
+            brandLogo.alt = brandNames[brand] || brand;
+            brandLink.href = `#products?brand=${brand}`;
+            brandLink.style.display = 'inline-flex';
+        } else {
+            brandLink.style.display = 'none';
+        }
+
+        brandTextLink.href = `#products?brand=${brand}`;
+        brandTextLink.onclick = (e) => {
+            e.preventDefault();
+            closeModal();
+            filterByBrand(brand, brandNames[brand]);
+        };
+        brandLink.onclick = (e) => {
+            e.preventDefault();
+            closeModal();
+            filterByBrand(brand, brandNames[brand]);
+        };
 
         const specs = generateSpecs(name, brand);
         const specsList = document.getElementById('modalSpecs');

@@ -561,6 +561,9 @@ body {
     height: 170px;
     width: 100%;
     transition: transform var(--transition);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .product-card:hover .product-img {

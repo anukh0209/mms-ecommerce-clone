@@ -203,7 +203,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const sku = card.querySelector('.sku').textContent;
         const desc = card.querySelector('.product-desc').textContent;
         const stock = card.querySelector('.stock').textContent;
-        const bg = card.querySelector('.product-img').style.background;
+        const imgStyle = card.querySelector('.product-img').style;
+        const bg = imgStyle.backgroundImage || imgStyle.background;
 
         document.getElementById('modalBrand').textContent = brandNames[brand] || brand;
         document.getElementById('modalTitle').textContent = name;

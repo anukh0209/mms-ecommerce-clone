@@ -78,7 +78,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Show all products
     showAllBtn.addEventListener('click', () => {
-        showAllProducts();
+        const cards = productsGrid.querySelectorAll('.product-card');
+        cards.forEach((card, index) => {
+            card.style.display = '';
+            card.style.animation = `fadeInUp 0.4s ease ${index * 0.02}s forwards`;
+        });
+        productsTitle.textContent = 'БҮХ БҮТЭЭГДЭХҮҮН';
+        showAllBtn.style.display = 'none';
+        document.getElementById('products').scrollIntoView({ behavior: 'smooth' });
     });
 
     function filterByBrand(brand, title) {
@@ -120,13 +127,23 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function showAllProducts() {
         const cards = productsGrid.querySelectorAll('.product-card');
-        cards.forEach((card, index) => {
-            card.style.display = '';
-            card.style.animation = `fadeInUp 0.4s ease ${index * 0.02}s forwards`;
+        const seenBrands = new Set();
+        cards.forEach((card) => {
+            const brand = card.dataset.brand;
+            if (!seenBrands.has(brand)) {
+                seenBrands.add(brand);
+                card.style.display = '';
+                card.style.animation = 'fadeInUp 0.4s ease forwards';
+            } else {
+                card.style.display = 'none';
+            }
         });
-        productsTitle.textContent = 'БҮХ БҮТЭЭГДЭХҮҮН';
-        showAllBtn.style.display = 'none';
+        productsTitle.textContent = 'ОНЦЛОХ БҮТЭЭГДЭХҮҮН';
+        showAllBtn.style.display = 'inline-flex';
     }
+
+    // On initial load show one product per brand
+    showAllProducts();
 
     // Search
     searchForm.addEventListener('submit', (e) => {
@@ -166,6 +183,9 @@ document.addEventListener('DOMContentLoaded', () => {
             showAllProducts();
         }
     });
+
+    // On initial load show one product per brand
+    showAllProducts();
 
     // Add to cart
     document.querySelectorAll('.add-cart-btn').forEach(btn => {

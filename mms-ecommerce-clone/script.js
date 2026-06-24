@@ -222,7 +222,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const oldPrice = card.querySelector('.old-price').textContent;
         const sku = card.querySelector('.sku').textContent;
         const desc = card.querySelector('.product-desc').textContent;
-        const stock = card.querySelector('.stock').textContent;
         const imgStyle = card.querySelector('.product-img').style;
         const bg = imgStyle.backgroundImage || imgStyle.background;
 
@@ -232,7 +231,7 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('modalDesc').textContent = desc;
         document.getElementById('modalPrice').textContent = price;
         document.getElementById('modalOldPrice').textContent = oldPrice;
-        document.getElementById('modalStock').textContent = stock;
+        document.getElementById('modalStock').textContent = '';
         document.getElementById('modalImg').style.background = bg;
 
         const specs = generateSpecs(name, brand);

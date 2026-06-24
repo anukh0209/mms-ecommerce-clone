@@ -1480,6 +1480,11 @@
         </div>
     </div>
 
+    <script>
+        window.onerror = function(message, source, lineno, colno, error) {
+            console.log('JS Error:', message, 'at', lineno, ':', colno);
+        };
+    </script>
     <script src="script.js"></script>
 </body>
 </html>

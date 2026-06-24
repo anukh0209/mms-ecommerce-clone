@@ -883,28 +883,33 @@ body {
 
 .auth-modal {
     max-width: 420px;
-    overflow: visible;
+    max-height: 90vh;
+    overflow-y: auto;
 }
 
 .auth-modal-content {
-    padding: 36px;
+    padding: 28px;
 }
 
 .auth-tabs {
     display: flex;
     gap: 8px;
-    margin-bottom: 24px;
+    margin-bottom: 18px;
     border-bottom: 2px solid var(--border);
+    position: sticky;
+    top: 0;
+    background: white;
+    z-index: 5;
 }
 
 .auth-tab {
     flex: 1;
-    padding: 12px;
+    padding: 10px;
     border: none;
     background: transparent;
     color: var(--gray);
     font-weight: 700;
-    font-size: 0.9375rem;
+    font-size: 0.875rem;
     cursor: pointer;
     position: relative;
     transition: color var(--transition);
@@ -935,31 +940,31 @@ body {
 }
 
 .auth-form h3 {
-    font-size: 1.25rem;
+    font-size: 1.125rem;
     font-weight: 800;
     color: var(--dark);
-    margin-bottom: 20px;
+    margin-bottom: 16px;
     text-align: center;
 }
 
 .form-group {
-    margin-bottom: 16px;
+    margin-bottom: 12px;
 }
 
 .form-group label {
     display: block;
-    font-size: 0.8125rem;
+    font-size: 0.75rem;
     font-weight: 600;
     color: var(--dark);
-    margin-bottom: 6px;
+    margin-bottom: 4px;
 }
 
 .form-group input {
     width: 100%;
-    padding: 12px 14px;
+    padding: 10px 12px;
     border: 1px solid var(--border);
     border-radius: var(--radius-sm);
-    font-size: 0.9375rem;
+    font-size: 0.875rem;
     color: var(--text);
     background: var(--white);
     transition: border-color var(--transition), box-shadow var(--transition);
@@ -973,13 +978,16 @@ body {
 
 .btn-full {
     width: 100%;
-    margin-top: 8px;
+    margin-top: 4px;
+    padding: 12px;
+    font-size: 0.9375rem;
 }
 
 .auth-helper {
     text-align: center;
-    margin-top: 16px;
-    font-size: 0.875rem;
+    margin-top: 12px;
+    margin-bottom: 0;
+    font-size: 0.8125rem;
     color: var(--gray);
 }
 
@@ -1022,10 +1030,12 @@ body {
 
 @media (max-width: 480px) {
     .auth-modal {
-        max-width: 100%;
+        max-width: 92vw;
+        max-height: 86vh;
+        border-radius: 12px;
     }
     .auth-modal-content {
-        padding: 24px;
+        padding: 20px;
     }
 }
 

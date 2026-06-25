@@ -170,16 +170,17 @@ body {
 }
 
 .logo-circle {
-    width: 54px;
-    height: 54px;
+    width: 64px;
+    height: 64px;
     border-radius: 50%;
-    border: 3px solid var(--primary);
+    border: 3.5px solid var(--primary);
     color: var(--primary);
     display: flex;
     align-items: center;
     justify-content: center;
     font-weight: 800;
-    font-size: 1rem;
+    font-size: 1.25rem;
+    letter-spacing: -0.02em;
     transition: background var(--transition), color var(--transition);
 }
 
@@ -191,21 +192,23 @@ body {
 .logo-text {
     display: flex;
     flex-direction: column;
-    line-height: 1.1;
+    line-height: 1.05;
+    gap: 2px;
 }
 
 .logo-line1 {
-    font-size: 0.625rem;
+    font-size: 0.6875rem;
     color: var(--gray);
-    letter-spacing: 0.12em;
+    letter-spacing: 0.15em;
+    font-weight: 500;
 }
 
 .logo-line2,
 .logo-line3 {
-    font-size: 0.75rem;
+    font-size: 0.9375rem;
     color: var(--dark);
     font-weight: 800;
-    letter-spacing: 0.04em;
+    letter-spacing: 0.02em;
 }
 
 .header-center {
